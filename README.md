@@ -10,3 +10,7 @@ $ curl -O https://raw.githubusercontent.com/MrZaghar/install.nx2/master/install-
 $ sudo chmod +x install-nx2.sh
 $ ./install-nx2.sh
 ```
+**or:**
+```
+$ curl -sL https://raw.githubusercontent.com/MrZaghar/install.nx2/master/install-nx2.sh | sudo bash -
+```
