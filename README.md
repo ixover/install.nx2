@@ -6,11 +6,11 @@ install nginx and nodejs
 **commands:**
 
 ```
-$ curl -O https://raw.githubusercontent.com/MrZaghar/install.nx2/master/install-nx2.sh
-$ sudo chmod +x install-nx2.sh
-$ ./install-nx2.sh
+ curl -O https://raw.githubusercontent.com/MrZaghar/install.nx2/master/install-nx2.sh
+ sudo chmod +x install-nx2.sh
+ ./install-nx2.sh
 ```
 **or:**
 ```
-$ curl -sL https://raw.githubusercontent.com/MrZaghar/install.nx2/master/install-nx2.sh | sudo bash -
+ curl -sL https://raw.githubusercontent.com/MrZaghar/install.nx2/master/install-nx2.sh | sudo bash -
 ```
