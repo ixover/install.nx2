@@ -14,3 +14,14 @@ install nginx and nodejs
 ```
  curl -sL https://raw.githubusercontent.com/MrZaghar/install.nx2/master/install-nx2.sh | sudo bash -
 ```
+
+### How to add new domain in Nginx
+to use domain.com for website and statics.domain.com for files
+
+**command:**
+```
+ curl -sL https://raw.githubusercontent.com/MrZaghar/install.nx2/master/add-domain.sh | sudo bash -
+```
+PS : Its only for nodejs apps
+First you have to start you app with ``` pm2 ``` or ``` forever ```
+After that use command above and add domain name + port when shell asks you
