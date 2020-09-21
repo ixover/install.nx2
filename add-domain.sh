@@ -1,8 +1,8 @@
 #!/bin/sh
 echo "please put domain name:"
 read domain
-mkdir -p "/var/www/$domain/public_html"
-chmod 755 "/var/www/$domain/public_html"
+sudo mkdir -p "/var/www/$domain/public_html"
+sudo chmod 755 "/var/www/$domain/public_html"
 echo "please put proxy ip:port
 ex:127.0.0.1:3000"
 read proxy
@@ -36,5 +36,5 @@ server {
 		autoindex off;
 	}
 }">"/etc/nginx/sites-available/$domain.conf"
-ln -s "/etc/nginx/sites-available/$domain.conf" "/etc/nginx/sites-enabled/$domain.conf"
+sudo ln -s "/etc/nginx/sites-available/$domain.conf" "/etc/nginx/sites-enabled/$domain.conf"
 echo "now you can restart your nginx server"
