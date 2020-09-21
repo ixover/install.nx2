@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "please put domain name:"
 read domain
-mkdir -p "/var/www/$domain/public_html"
-chmod 755 "/var/www/$domain/public_html"
+sudo mkdir -p "/var/www/$domain/public_html"
+sudo chmod 755 "/var/www/$domain/public_html"
 echo "please put proxy ip:port\nex:127.0.0.1:3000\n"
 read proxy
 echo "server {
@@ -11,7 +11,7 @@ echo "server {
 	root /var/www/$domain/public_html;
     index index.html index.htm;
    location / {
-				proxy_pass http://$proxy;
+		proxy_pass http://$proxy;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
                 proxy_set_header Connection 'upgrade';
@@ -35,5 +35,5 @@ server {
 		autoindex off;
 	}
 }">"/etc/nginx/sites-available/$domain.conf"
-ln -s "/etc/nginx/sites-available/$domain.conf" "/etc/nginx/sites-enabled/$domain.conf"
+sudo ln -s "/etc/nginx/sites-available/$domain.conf" "/etc/nginx/sites-enabled/$domain.conf"
 echo "now you can restart your nginx server"
