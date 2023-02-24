@@ -20,6 +20,12 @@ to use domain.com for website and statics.domain.com for files
 
 **command:**
 ```
+ curl -O https://raw.githubusercontent.com/ixover/install.nx2/master/add-domain.sh
+ sudo chmod +x add-domain.sh
+ ./add-domain.sh
+```
+**or:**
+```
  curl -sL https://raw.githubusercontent.com/ixover/install.nx2/master/add-domain.sh | sudo bash -
 ```
 PS : Its only for nodejs apps
