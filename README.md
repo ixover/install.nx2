@@ -26,7 +26,7 @@ to use domain.com for website and statics.domain.com for files
 ```
 **or:**
 ```
- curl -sL https://raw.githubusercontent.com/ixover/install.nx2/master/add-domain.sh | sudo bash -
+bash -c "$(curl -sL https://raw.githubusercontent.com/ixover/install.nx2/master/add-domain.sh)"
 ```
 PS : Its only for nodejs apps
 First you have to start you app with ``` pm2 ``` or ``` forever ```
